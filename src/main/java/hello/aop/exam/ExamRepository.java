@@ -1,5 +1,6 @@
 package hello.aop.exam;
 
+import hello.aop.exam.annotation.Trace;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -12,6 +13,7 @@ public class ExamRepository {
      * @param itemId
      * @return
      */
+    @Trace
     public String save(String itemId) {
         seq += 1;
 
